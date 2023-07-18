@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Background Image Remover</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/templatemo-digimedia-v3.css" />
+    <link rel="stylesheet" href="assets/css/animated.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+     <link rel="stylesheet" href="assets/css/color.css" />
+
+    <style>
+      #container {
+        position: relative;
+      }
+.uploaded-image{
+  
+  width: 50%;
+  position: absolute;
+  top: 210px;
+  right: 0px;
+}
+
+
+     
+    </style>
+  </head>
+
+  <body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+      <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span>
+
+          </span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- Pre-header Starts -->
+    <div class="pre-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-sm-8 col-7">
+            <ul class="info">
+              <li>
+                <a href="mailto:as5589428@gmail.com?subject=Hello"
+                  ><i class="fa fa-envelope"></i>as5589428@gmail.com</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-phone"></i>+91-7410120865</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-sm-4 col-5">
+            <ul class="social-media">
+              <li>
+                <a href="https://www.facebook.com/as5589428?mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="https://github.com/as5589428?tab=repositories"><i class="fa fa-github"></i></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/AmanSha17513443"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/aman-shaikh-97211320a/"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Pre-header End -->
+
+    <!-- ***** Header Area Start ***** -->
+    <header
+      class="header-area header-sticky wow slideInDown"
+      data-wow-duration="0.75s"
+      data-wow-delay="0s"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <!-- ***** Logo Start ***** -->
+              <a href="index.html" class="logo">
+                <img src="./assets/images/logo-v1.png" alt="" />
+             
+              </a>
+              <!-- ***** Logo End ***** -->
+              <!-- ***** Menu Start ***** -->
+              <ul class="nav">
+                <li class="scroll-to-section">
+                  <a href="#top" class="active">Home</a>
+                </li>
+                <li class="scroll-to-section"><a href="#about">About</a></li>
+            
+               
+             
+
+                <li class="scroll-to-section">
+                  <a href="#contact">Contact</a>
+                </li>
+
+                <li class="scroll-to-section">
+                  <div class="border-first-button">
+
+                    <a href="#top">Let's Try
+                      
+                    </a>
+                  </div>
+                </li>
+              </ul>
+              <a class="menu-trigger">
+                <span>Menu</span>
+              </a>
+              <!-- ***** Menu End ***** -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <div
+      class="main-banner wow fadeIn"
+      id="top"
+      data-wow-duration="1s"
+      data-wow-delay="0.5s"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="col-lg-6 align-self-center">
+                <div
+                  class="left-content show-up header-text wow fadeInLeft"
+                  data-wow-duration="1s"
+                  data-wow-delay="1s"
+                >
+                  <div id="container">
+              
+                    <div class="row">
+                   
+                      <div class="col-lg-12">
+                        <h6>Image Background Remover</h6>
+                        <h2>We clear your Image Background</h2>
+                                               
+                      </div>
+              
+                  
+                      <div class="col-lg-12">
+                        <div class="border-first-button scroll-to-section">
+                          <a
+                            >Let's Try
+                            <label for="fileInput">Select a File:(E.g People with BG,Animated Pics)</label>
+                            <input id="fileInput" type="file" />
+                          </a>
+                        </div>
+                
+                        <!-- <img id="overlay-image" alt="Overlay Image"> -->
+
+                        <input
+                          class="btn btn-danger m-5"
+                          type="button"
+                         
+                          id="submitButton"
+                          onclick="submitHandler()"
+                          value="Upload"
+                        />
+                        <button
+                          class="btn btn-warning"
+                          onclick="downloadFile()"
+                        >
+                          Download
+                        </button>
+                      </div>
+             
+                     </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div
+                  class="right-image wow fadeInRight"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.5s"
+                >
+                <!-- <div id="photoContainer">
+                  <img id="background-image" onclick="submitHandler()"
+                  
+                    src="assets/images/border.png"
+                    alt=""/> -->
+                    
+                    
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="about" class="about section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="col-lg-6">
+                <div
+                  class="about-left-image wow fadeInLeft"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.5s"
+                >
+                  <img src="assets/images/about-dec-v3.png" alt="" />
+                </div>
+              </div>
+              <div
+                class="col-lg-6 align-self-center wow fadeInRight"
+                data-wow-duration="1s"
+                data-wow-delay="0.5s"
+              >
+                <div class="about-right-content">
+                  <div class="section-heading">
+                    <h6>About Myself</h6>
+                    <h4>About Me<em>:Aman Shaikh</em></h4>
+                    <div class="line-dec"></div>
+                  </div>
+                  <p>
+            Greetings! I am Aman Shaikh, a final-year B.Tech student specializing in Artificial Intelligence with a keen interest in web development. I have experience working with the MERN (MongoDB, Express.js, React.js, Node.js) stack, which has been instrumental in developing full-stack web applications. Throughout my academic journey, I've explored the intersection of AI and web development, incorporating AI-powered features into web applications. As I approach the end of my degree, I'm enthusiastic about leveraging the power of MERN stack and AI to build innovative, data-driven web solutions that can positively impact users' experiences. I'm excited about the opportunities that lie ahead in the dynamic world of AI and web development.
+                    <a
+                      rel="nofollow"
+                      href="http://paypal.me/templatemo"
+                      target="_blank"
+                      >contribute a little amount</a
+                    >
+                    via PayPal to
+                    <a href="https://templatemo.com/contact" target="_blank"
+                      >support TemplateMo</a
+                    >
+                    in creating new templates regularly.
+                  </p>
+                  <div class="row">
+                    <div class="col-lg-4 col-sm-4">
+                      <div
+                        class="skill-item first-skill-item wow fadeIn"
+                        data-wow-duration="1s"
+                        data-wow-delay="0s"
+                      >
+                        <div class="progress" data-percentage="90">
+                          <span class="progress-left">
+                            <span class="progress-bar"></span>
+                          </span>
+                          <span class="progress-right">
+                            <span class="progress-bar"></span>
+                          </span>
+                          <div class="progress-value">
+                            <div>
+                              90%<br />
+                              <span>Coding</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-4">
+                      <div
+                        class="skill-item second-skill-item wow fadeIn"
+                        data-wow-duration="1s"
+                        data-wow-delay="0s"
+                      >
+                        <div class="progress" data-percentage="80">
+                          <span class="progress-left">
+                            <span class="progress-bar"></span>
+                          </span>
+                          <span class="progress-right">
+                            <span class="progress-bar"></span>
+                          </span>
+                          <div class="progress-value">
+                            <div>
+                              80%<br />
+                              <span>Photoshop</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-4">
+                      <div
+                        class="skill-item third-skill-item wow fadeIn"
+                        data-wow-duration="1s"
+                        data-wow-delay="0s"
+                      >
+                        <div class="progress" data-percentage="80">
+                          <span class="progress-left">
+                            <span class="progress-bar"></span>
+                          </span>
+                          <span class="progress-right">
+                            <span class="progress-bar"></span>
+                          </span>
+                          <div class="progress-value">
+                            <div>
+                              80%<br />
+                              <span>Animation</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+
+    <div id="free-quote" class="free-quote">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 offset-lg-4">
+            <div
+              class="section-heading wow fadeIn"
+              data-wow-duration="1s"
+              data-wow-delay="0.3s"
+            >
+              <h6>Get Your Free Quote</h6>
+              <h4>Grow With Us Now</h4>
+              <div class="line-dec"></div>
+            </div>
+          </div>
+          <div
+            class="col-lg-8 offset-lg-2 wow fadeIn"
+            data-wow-duration="1s"
+            data-wow-delay="0.8s"
+          >
+            <form id="search" action="#" method="GET">
+              <div class="row">
+                <div class="col-lg-4 col-sm-4">
+                  <fieldset>
+                    <input
+                      type="web"
+                      name="web"
+                      class="website"
+                      placeholder="Your website URL..."
+                      autocomplete="on"
+                      required
+                    />
+                  </fieldset>
+                </div>
+                <div class="col-lg-4 col-sm-4">
+                  <fieldset>
+                    <input
+                      type="address"
+                      name="address"
+                      class="email"
+                      placeholder="Email Address..."
+                      autocomplete="on"
+                      required
+                    />
+                  </fieldset>
+                </div>
+                <div class="col-lg-4 col-sm-4">
+                  <fieldset>
+                    <button type="submit" class="main-button">
+                      Get Quote Now
+                    </button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+
+   
+
+    <div id="contact" class="contact-us section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 offset-lg-3">
+            <div
+              class="section-heading wow fadeIn"
+              data-wow-duration="1s"
+              data-wow-delay="0.5s"
+            >
+              <h6>Contact Us</h6>
+              <h4>Get In Touch With Us <em>Now</em></h4>
+              <div class="line-dec"></div>
+            </div>
+          </div>
+          <div
+            class="col-lg-12 wow fadeInUp"
+            data-wow-duration="0.5s"
+            data-wow-delay="0.25s"
+          >
+            <form id="contact" action="" method="post">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="contact-dec">
+                    <img src="assets/images/contact-dec-v3.png" alt="" />
+                  </div>
+                </div>
+                <div class="col-lg-5">
+                  <div id="map">
+                    <iframe
+                      src="https://maps.google.com/maps?width=724&amp;height=719&amp;hl=en&amp;q=Dawwat lawn&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                      width="100%"
+                      height="636px"
+                      frameborder="0"
+                      style="border: 0"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+                <div class="col-lg-7">
+                  <div class="fill-form">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <div class="info-post">
+                          <div class="icon">
+                            <img src="assets/images/phone-icon.png" alt="" />
+                            <a href="#">+91-7410120865</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="info-post">
+                          <div class="icon">
+                            <img src="assets/images/email-icon.png" alt="" />
+                            <a href="#">as5589428@gmail.com</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="info-post">
+                          <div class="icon">
+                            <img src="assets/images/location-icon.png" alt="" />
+                            <a href="#">440013-Nagpur</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <fieldset>
+                          <input
+                            type="name"
+                            name="name"
+                            id="name"
+                            placeholder="Name"
+                            autocomplete="on"
+                            required
+                          />
+                        </fieldset>
+                        <fieldset>
+                          <input
+                            type="text"
+                            name="email"
+                            id="email"
+                            pattern="[^ @]*@[^ @]*"
+                            placeholder="Your Email"
+                            required=""
+                          />
+                        </fieldset>
+                        <fieldset>
+                          <input
+                            type="subject"
+                            name="subject"
+                            id="subject"
+                            placeholder="Subject"
+                            autocomplete="on"
+                          />
+                        </fieldset>
+                      </div>
+                      <div class="col-lg-6">
+                        <fieldset>
+                          <textarea
+                            name="message"
+                            type="text"
+                            class="form-control"
+                            id="message"
+                            placeholder="Message"
+                            required=""
+                          ></textarea>
+                        </fieldset>
+                      </div>
+                      <div class="col-lg-12">
+                        <fieldset>
+                          <button
+                            type="submit"
+                            id="form-submit"
+                            class="main-button"
+                          >
+                            Send Message Now
+                          </button>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <p>
+        Copyright © 2023 Web-Dev-Aman.,Ltd. All Rights Reserved.
+              <br />Code:
+              <a
+                href="https://github.com/as5589428?tab=repositories"
+                target="_parent"
+                title="Github"
+                >Github</a
+              >
+            </p>
+     
+          </div>
+                
+        </div>
+
+      </div>
+ 
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/bgremover.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/animation.js"></script>
+    <script src="assets/js/imagesloaded.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>
