@@ -9,5 +9,5 @@ Step 3: Then,select on upload image and then upload sample image of superman i h
 Step 4: Boom set to go!!!
 
 <p align="center">
-    <img width="200" src="http://material-bread.org/logo-shadow.svg" alt="Material Bread logo">
+    <img width="200" src="https://github.com/as5589428/Image-BG-Remover-Javascript-and-Api/blob/main/Image-BG-Remover/WebPagePhoto.jpeg" alt="Material Bread logo">
 </p>
